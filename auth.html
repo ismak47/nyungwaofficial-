@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nyungwa Media - Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script defer src="auth.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Nyungwa Media</h1>
+    <p>Ingia au Jisajili</p>
+  </header>
+
+  <div class="content">
+    <h2>Tafadhali Ingia</h2>
+    <form id="login-form">
+      <input type="email" id="email" placeholder="Email" required /><br>
+      <input type="password" id="password" placeholder="Password" required /><br>
+      <button type="submit">Ingia</button>
+    </form>
+
+    <h3>Huna akaunti? Jisajili hapa chini:</h3>
+    <form id="signup-form">
+      <input type="email" id="signup-email" placeholder="Email" required /><br>
+      <input type="password" id="signup-password" placeholder="Password" required /><br>
+      <button type="submit">Jisajili</button>
+    </form>
+
+    <div id="message"></div>
+    <button id="logout-btn" style="display:none;">Toka</button>
+  </div>
+</body>
+</html>
